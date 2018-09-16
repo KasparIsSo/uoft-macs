@@ -1,0 +1,62 @@
+@import "variables/breakpoints.scss";
+@import "variables/grid.scss";
+
+.grid-container {
+  display: grid;
+  max-width: $grid-max-width;
+  grid-column-gap: 24px;
+  grid-template-columns: repeat($grid-columns, 1fr);
+}
+
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    grid-column: span #{$i};
+  }
+}
+
+.grid-container--inline {
+  display: inline-grid;
+}
+
+@media (max-width: $breakpoint--desktop) {
+  .grid-container {
+    max-width: $grid-max-width--desktop;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat($grid-columns, 1fr);
+  }
+
+  @for $i from 1 through $grid-columns {
+    .col-#{$i} {
+      grid-column: span #{$i};
+    }
+  }
+}
+
+@media (max-width: $breakpoint--tablet) {
+  .grid-container {
+    max-width: $grid-max-width--tablet;
+    grid-column-gap: 20px;
+    $columns: ();
+    grid-template-columns: repeat($grid-columns--tablet, 1fr);
+  }
+
+  @for $i from 1 through $grid-columns--tablet {
+    .col-#{$i} {
+      grid-column: span #{$i};
+    }
+  }
+}
+
+@media (max-width: $breakpoint--mobile) {
+  .grid-container {
+    max-width: $grid-max-width--mobile;
+    grid-column-gap: 16px;
+    grid-template-columns: repeat($grid-columns--mobile, 1fr);
+  }
+
+  @for $i from 1 through $grid-columns--mobile {
+    .col-#{$i} {
+      grid-column: span #{$i};
+    }
+  }
+}

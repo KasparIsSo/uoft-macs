@@ -1,0 +1,13 @@
+{
+  "name": "uoft-macs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "KasparIsSo <kasparso421@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "watch:scss": "sass --watch app/public/wp-content/themes/uoftmacs/scss:app/public/wp-content/themes/uoftmacs/css"
+  },
+  "dependencies": {
+    "sass": "1.13.4"
+  }
+}
