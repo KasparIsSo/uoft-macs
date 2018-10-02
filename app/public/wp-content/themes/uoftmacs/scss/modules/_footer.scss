@@ -1,0 +1,49 @@
+@import "variables/color.scss";
+@import "typography.scss";
+
+.footer {
+  width: 100%;
+  background-color: $blue;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.footer__container {
+  margin: 0 auto;
+}
+
+.footer__logo {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer__module {
+  grid-column: span 6;
+  @include f-size--m;
+  color: $white;
+
+  @media (max-width: $breakpoint--tablet) {
+    grid-column: span $grid-columns--tablet;
+  }
+
+  @media (max-width: $breakpoint--mobile) {
+    grid-column: span $grid-columns--mobile;
+  }
+}
+
+.footer__module-title {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer__module-details {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer__module-details a,
+.footer__module-details a:visited {
+  text-decoration: none;
+  color: $white;
+}

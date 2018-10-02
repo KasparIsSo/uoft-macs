@@ -1,13 +1,101 @@
 @import "variables/breakpoints.scss";
+@import "variables/typography.scss";
 @import "utils/functions.scss";
 
-@mixin f-size--l() {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+@mixin f-size--l {
+  font-size: rem(18);
+  line-height: rem(30);
   @media (max-width: $breakpoint--desktop) {
+    font-size: rem(18);
+    line-height: rem(30);
   }
 
   @media (max-width: $breakpoint--tablet) {
+    font-size: rem(18);
+    line-height: rem(30);
   }
 
   @media (max-width: $breakpoint--tablet) {
+    font-size: rem(18);
+    line-height: rem(30);
+  }
+}
+
+@mixin f-size--m-body {
+  font-size: rem(14);
+  line-height: rem(28);
+  letter-spacing: rem(0.3);
+  @media (max-width: $breakpoint--desktop) {
+    font-size: rem(14);
+    line-height: rem(28);
+    letter-spacing: rem(0.3);
+  }
+
+  @media (max-width: $breakpoint--tablet) {
+    font-size: rem(14);
+    line-height: rem(28);
+    letter-spacing: rem(0.3);
+  }
+
+  @media (max-width: $breakpoint--tablet) {
+    font-size: rem(14);
+    line-height: rem(28);
+    letter-spacing: rem(0.3);
+  }
+}
+
+@mixin f-size--m {
+  font-size: rem(14);
+  line-height: rem(22);
+  letter-spacing: rem(0.3);
+  @media (max-width: $breakpoint--desktop) {
+    font-size: rem(14);
+    line-height: rem(22);
+    letter-spacing: rem(0.3);
+  }
+
+  @media (max-width: $breakpoint--tablet) {
+    font-size: rem(14);
+    line-height: rem(22);
+    letter-spacing: rem(0.3);
+  }
+
+  @media (max-width: $breakpoint--tablet) {
+    font-size: rem(14);
+    line-height: rem(22);
+    letter-spacing: rem(0.3);
+  }
+}
+
+@mixin f-size--s {
+  font-size: rem(10);
+  line-height: rem(14);
+  letter-spacing: rem(0.2);
+  @media (max-width: $breakpoint--desktop) {
+    font-size: rem(10);
+    line-height: rem(14);
+    letter-spacing: rem(0.2);
+  }
+
+  @media (max-width: $breakpoint--tablet) {
+    font-size: rem(10);
+    line-height: rem(14);
+    letter-spacing: rem(0.2);
+  }
+
+  @media (max-width: $breakpoint--tablet) {
+    font-size: rem(10);
+    line-height: rem(14);
+    letter-spacing: rem(0.2);
   }
 }

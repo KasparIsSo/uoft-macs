@@ -1,5 +1,46 @@
+@import "variables/breakpoints.scss";
+@import "variables/grid.scss";
+@import "typography.scss";
+
+.content__wrapper {
+  width: 100%;
+  background-image: url("../assets/images/background-pattern.jpg");
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  min-height: 65vh;
+}
+
 .content {
   margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media (max-width: $breakpoint--tablet) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  @media (max-width: $breakpoint--mobile) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.content__course-break {
+  grid-column-start: 2;
+  grid-column-end: $grid-columns;
+  display: block;
+  margin: 20px 0;
+
+  @media (max-width: $breakpoint--tablet) {
+    grid-column-start: 1;
+    grid-column-end: $grid-columns--tablet + 1;
+  }
+
+  @media (max-width: $breakpoint--mobile) {
+    grid-column-start: 1;
+    grid-column-end: $grid-columns--mobile + 1;
+  }
 }
 
 .feature__image {
@@ -12,16 +53,79 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  // object-position: 50% 50%;
   object-position: 0 0;
 }
 
 .quote {
   grid-column-start: 2;
   grid-column-end: 4;
+  @include f-size--l;
+  font-weight: 700;
+  color: $blue;
+  @media (max-width: $breakpoint--tablet) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  @media (max-width: $breakpoint--mobile) {
+    grid-column-start: 1;
+    grid-column-end: $grid-columns--mobile + 1;
+    margin-bottom: 20px;
+  }
 }
 
 .content__text {
   grid-column-start: 4;
   grid-column-end: 12;
+  @include f-size--m-body;
+  @media (max-width: $breakpoint--tablet) {
+    grid-column-start: 3;
+    grid-column-end: $grid-columns--tablet + 1;
+  }
+
+  @media (max-width: $breakpoint--mobile) {
+    grid-column-start: 1;
+    grid-column-end: $grid-columns--mobile + 1;
+  }
+}
+
+.content--image-full {
+  margin: 0 auto;
+  @media (max-width: $breakpoint--mobile) {
+    display: block;
+    padding: 0;
+    margin: none;
+  }
+}
+
+.image--full {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+
+  @media (max-width: $breakpoint--tablet) {
+    grid-column-start: 1;
+    grid-column-end: $grid-columns--tablet + 1;
+  }
+
+  @media (max-width: $breakpoint--mobile) {
+    width: 100%;
+  }
+}
+
+.image--full > img {
+  width: 100%;
+  @media (max-width: $breakpoint--mobile) {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+.image__caption {
+  @include f-size--s;
+  @media (max-width: $breakpoint--mobile) {
+    margin: 5px 30px;
+  }
 }

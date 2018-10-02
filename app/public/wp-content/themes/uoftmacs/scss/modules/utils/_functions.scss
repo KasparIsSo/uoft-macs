@@ -2,3 +2,8 @@
   $remSize: $size / 16;
   @return #{$remSize}rem;
 }
+
+@mixin transition($duration) {
+  transition-timing-function: ease-in-out;
+  transition-duration: $duration;
+}

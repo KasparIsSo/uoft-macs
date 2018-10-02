@@ -1,0 +1,63 @@
+@import "variables/breakpoints.scss";
+@import "variables/color.scss";
+@import "variables/grid.scss";
+
+.calendar__embed {
+  grid-column-start: 2;
+  grid-column-end: $grid-columns;
+  margin-bottom: 60px;
+
+  @media (max-width: $breakpoint--tablet) {
+    grid-column-start: 1;
+    grid-column-end: $grid-columns--tablet + 1;
+  }
+
+  @media (max-width: $breakpoint--mobile) {
+    display: none;
+  }
+}
+
+.calendar__list {
+  grid-column-start: 2;
+  grid-column-end: $grid-columns;
+
+  @media (max-width: $breakpoint--tablet) {
+    grid-column-start: 1;
+    grid-column-end: $grid-columns--tablet + 1;
+  }
+
+  @media (max-width: $breakpoint--mobile) {
+    grid-column-start: 1;
+    grid-column-end: $grid-columns--mobile + 1;
+  }
+}
+
+.calendar__list-title {
+  @include f-size--l;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: $blue;
+}
+
+.event {
+  display: block;
+}
+
+.event__title {
+  @include f-size--l;
+  margin-bottom: 5px;
+}
+
+.event__date {
+  @include f-size--m;
+  margin-bottom: 5px;
+}
+
+.event__location {
+  @include f-size--m;
+  margin-bottom: 20px;
+}
+
+.event__description {
+  @include f-size--m;
+}

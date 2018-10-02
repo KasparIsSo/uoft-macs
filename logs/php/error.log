@@ -23,3 +23,22 @@ Stack trace:
   thrown in /app/public/wp-content/themes/uoftmacs/index.php on line 4
 [16-Sep-2018 02:22:02 UTC] PHP Parse error:  syntax error, unexpected '/' in /app/public/wp-content/themes/uoftmacs/index.php on line 8
 [16-Sep-2018 02:29:22 UTC] PHP Parse error:  syntax error, unexpected '<' in /app/public/wp-content/themes/uoftmacs/index.php on line 10
+[16-Sep-2018 04:22:53 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /app/public/wp-content/themes/uoftmacs/header.php on line 16
+[16-Sep-2018 04:23:06 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/uoftmacs/header.php on line 16
+[16-Sep-2018 04:23:07 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/uoftmacs/header.php on line 16
+[16-Sep-2018 04:23:30 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting ',' or ')' in /app/public/wp-content/themes/uoftmacs/header.php on line 20
+[16-Sep-2018 04:23:31 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting ',' or ')' in /app/public/wp-content/themes/uoftmacs/header.php on line 20
+[16-Sep-2018 15:27:58 UTC] PHP Parse error:  syntax error, unexpected '<' in /app/public/wp-content/themes/uoftmacs/index.php on line 11
+[16-Sep-2018 15:29:28 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /app/public/wp-content/themes/uoftmacs/index.php on line 16
+[16-Sep-2018 15:29:31 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /app/public/wp-content/themes/uoftmacs/index.php on line 16
+[16-Sep-2018 15:40:13 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /app/public/wp-content/themes/uoftmacs/index.php on line 29
+[16-Sep-2018 23:43:58 UTC] PHP Warning:  substr() expects parameter 1 to be string, array given in /app/public/wp-content/plugins/advanced-custom-fields/core/api.php on line 268
+[16-Sep-2018 23:43:58 UTC] PHP Warning:  Illegal offset type in isset or empty in /app/public/wp-includes/meta.php on line 508
+[16-Sep-2018 23:44:00 UTC] PHP Warning:  substr() expects parameter 1 to be string, array given in /app/public/wp-content/plugins/advanced-custom-fields/core/api.php on line 268
+[16-Sep-2018 23:44:00 UTC] PHP Warning:  Illegal offset type in isset or empty in /app/public/wp-includes/meta.php on line 508
+[18-Sep-2018 06:01:15 UTC] PHP Warning:  Illegal string offset 'url' in /app/public/wp-content/themes/uoftmacs/program-overview.php on line 29
+[18-Sep-2018 06:01:15 UTC] PHP Warning:  Illegal string offset 'alt' in /app/public/wp-content/themes/uoftmacs/program-overview.php on line 29
+[18-Sep-2018 06:01:15 UTC] PHP Warning:  Illegal string offset 'description' in /app/public/wp-content/themes/uoftmacs/program-overview.php on line 31
+[18-Sep-2018 06:01:15 UTC] PHP Warning:  Illegal string offset 'caption' in /app/public/wp-content/themes/uoftmacs/program-overview.php on line 32
+[18-Sep-2018 20:21:51 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/themes/uoftmacs/functions.php on line 17
+[21-Sep-2018 08:39:54 UTC] PHP Parse error:  syntax error, unexpected 'wp_enqueue_script' (T_STRING), expecting ',' or ';' in /app/public/wp-content/themes/uoftmacs/functions.php on line 17

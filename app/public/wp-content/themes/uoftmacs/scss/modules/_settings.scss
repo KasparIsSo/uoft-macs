@@ -1,8 +1,14 @@
 @import "variables/color.scss";
+@import "variables/typography.scss";
 
 html,
 body {
   margin: 0;
   padding: 0;
   background-color: $offWhite;
+}
+
+* {
+  font-family: $primary-font;
+  box-sizing: border-box;
 }
