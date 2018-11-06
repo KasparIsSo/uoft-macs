@@ -16,6 +16,10 @@ function uoftmacs_script_enqueue(){
       wp_enqueue_script('calendar', get_template_directory_uri() . '/js/calendar.js', array(), '1.0.0', true);
       wp_enqueue_style('calendarstyle', get_template_directory_uri() . '/css/news-and-events.css', array(), '1.0.0', 'all');
     }
+
+    if(is_page_template( 'people.php' )){ 
+      wp_enqueue_style('people', get_template_directory_uri() . '/css/people.css', array(), '1.0.0', 'all');
+    }
   }
 
 }
@@ -29,10 +33,20 @@ function uoftmacs_theme_setup(){
   add_theme_support('post-formats', array(''));
   register_nav_menu('primary', 'Primary Header Navigation');
   register_nav_menu('footer', 'Footer Navigation');
+  add_filter('jpeg_quality', function($arg){return 100;});
 
 }
 
+function wpdocs_theme_setup() {
+  add_image_size( 'mobile', 420 );
+  add_image_size( 'tablet', 768 );
+  add_image_size( 'desktop', 1160 );
+  add_image_size( 'desktop-large', 1600 );
+  add_image_size( 'desktop-max', 1920 );
+}
+
 add_action('init', 'uoftmacs_theme_setup');
+add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 
 function add_image_class($class){
   $class .= ' additional-class';

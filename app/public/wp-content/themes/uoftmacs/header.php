@@ -9,8 +9,12 @@
 </head>
 <body>
   <div class = "nav">
+    <div class = "nav__background-container">
+      <div class = "nav__container grid-container">
+        <img class = "nav__background" src = "<?php bloginfo('stylesheet_directory'); ?>/assets/logos/nav-background.jpg">
+      </div>
+    </div>
     <div class = "nav__container grid-container">
-      <img class = "nav__background" src = "<?php bloginfo('stylesheet_directory'); ?>/assets/logos/nav-background.jpg">
       <div class = "nav__logo-container">
         <a href = "<?php echo home_url()?>"><img class = "nav__logo" src="<?php bloginfo('stylesheet_directory'); ?>/assets/logos/uoft-logo.png"></a>
       </div>

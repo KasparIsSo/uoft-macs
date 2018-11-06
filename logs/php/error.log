@@ -42,3 +42,49 @@ Stack trace:
 [18-Sep-2018 06:01:15 UTC] PHP Warning:  Illegal string offset 'caption' in /app/public/wp-content/themes/uoftmacs/program-overview.php on line 32
 [18-Sep-2018 20:21:51 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/themes/uoftmacs/functions.php on line 17
 [21-Sep-2018 08:39:54 UTC] PHP Parse error:  syntax error, unexpected 'wp_enqueue_script' (T_STRING), expecting ',' or ';' in /app/public/wp-content/themes/uoftmacs/functions.php on line 17
+[13-Oct-2018 03:28:02 UTC] PHP Fatal error:  Uncaught Error: Cannot unset string offsets in /app/public/wp-content/themes/uoftmacs/functions.php:47
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): remove_default_image_sizes('')
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /app/public/wp-settings.php(434): do_action('after_setup_the...')
+#4 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#5 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#6 /app/public/wp-blog-header.php(13): require_once('/app/public/wp-...')
+#7 /app/public/index.php(17): require('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-content/themes/uoftmacs/functions.php on line 47
+[13-Oct-2018 03:28:15 UTC] PHP Fatal error:  Uncaught Error: Cannot unset string offsets in /app/public/wp-content/themes/uoftmacs/functions.php:47
+Stack trace:
+#0 /app/public/wp-includes/class-wp-hook.php(286): remove_default_image_sizes('')
+#1 /app/public/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /app/public/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /app/public/wp-settings.php(434): do_action('after_setup_the...')
+#4 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#5 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#6 /app/public/wp-blog-header.php(13): require_once('/app/public/wp-...')
+#7 /app/public/index.php(17): require('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-content/themes/uoftmacs/functions.php on line 47
+[13-Oct-2018 03:54:38 UTC] PHP Fatal error:  Cannot redeclare remove_image_size() (previously declared in /app/public/wp-includes/media.php:310) in /app/public/wp-content/themes/uoftmacs/functions.php on line 35
+[13-Oct-2018 03:55:20 UTC] PHP Fatal error:  Cannot redeclare remove_image_size() (previously declared in /app/public/wp-includes/media.php:310) in /app/public/wp-content/themes/uoftmacs/functions.php on line 35
+[13-Oct-2018 05:00:23 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /app/public/wp-content/themes/uoftmacs/program-overview.php on line 41
+[13-Oct-2018 05:08:56 UTC] PHP Warning:  include(): Filename cannot be empty in /app/public/wp-content/themes/uoftmacs/program-overview.php on line 29
+[13-Oct-2018 05:08:56 UTC] PHP Warning:  include(): Failed opening '' for inclusion (include_path='.:/usr/share/php:/www/wp-content/pear') in /app/public/wp-content/themes/uoftmacs/program-overview.php on line 29
+[13-Oct-2018 05:10:17 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /app/public/wp-content/themes/uoftmacs/program-overview.php on line 42
+[13-Oct-2018 05:10:19 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /app/public/wp-content/themes/uoftmacs/program-overview.php on line 42
+[13-Oct-2018 05:12:12 UTC] PHP Parse error:  syntax error, unexpected '<', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /app/public/wp-content/themes/uoftmacs/program-overview.php on line 30
+[13-Oct-2018 08:10:49 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /app/public/wp-content/themes/uoftmacs/partials/image-full-bleed.php on line 5
+[13-Oct-2018 08:11:04 UTC] PHP Parse error:  syntax error, unexpected '?' in /app/public/wp-content/themes/uoftmacs/partials/image-full-bleed.php on line 6
+[14-Oct-2018 05:59:10 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/uoftmacs/people.php on line 8
+[14-Oct-2018 06:57:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in /app/public/wp-content/themes/uoftmacs/people.php:24
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/uoftmacs/people.php on line 24
+[14-Oct-2018 06:59:18 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in /app/public/wp-content/themes/uoftmacs/people.php on line 35
+[14-Oct-2018 07:42:47 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting ':' in /app/public/wp-content/themes/uoftmacs/partials/profile.php on line 8
+[14-Oct-2018 07:50:21 UTC] PHP Parse error:  syntax error, unexpected 'get_field' (T_STRING), expecting ',' or ';' in /app/public/wp-content/themes/uoftmacs/partials/profile.php on line 14
+[14-Oct-2018 07:50:38 UTC] PHP Parse error:  syntax error, unexpected '.', expecting end of file in /app/public/wp-content/themes/uoftmacs/partials/profile.php on line 14

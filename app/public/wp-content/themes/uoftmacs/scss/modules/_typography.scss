@@ -1,5 +1,6 @@
 @import "variables/breakpoints.scss";
 @import "variables/typography.scss";
+@import "variables/color.scss";
 @import "utils/functions.scss";
 
 h1,
@@ -98,4 +99,9 @@ p {
     line-height: rem(14);
     letter-spacing: rem(0.2);
   }
+}
+
+a {
+  text-decoration: underline;
+  color: $blue;
 }

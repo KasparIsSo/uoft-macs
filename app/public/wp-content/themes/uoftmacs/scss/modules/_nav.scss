@@ -12,10 +12,18 @@
   width: 100%;
   background-color: $white;
   padding-top: 35px;
+  position: relative;
   @media (max-width: $breakpoint--tablet) {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+}
+
+.nav__background-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
   overflow: hidden;
 }
 
@@ -116,24 +124,53 @@
 .nav__menu-list {
   list-style: none;
   padding-left: 0;
+  margin-top: .5rem;
+  margin-bottom: 0;
 }
 
-.nav__menu-list > li {
+.nav__menu-list li {
+  position: relative;
   display: inline-block;
+  padding: 10px;
+  vertical-align: text-top;
+  @include transition($transition-duration);
 }
 
-.nav__menu-list > li > a,
-.nav__menu-list > li > a:visited {
+.nav__menu-list li a,
+.nav__menu-list li a:visited {
   @include f-size--m;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 20px;
-  color: $black;
+  color: $blue;
 }
 
-.nav__menu-list > li > a:hover {
-  text-decoration: underline;
+.nav__menu-list li:hover {
+  background: $blue;
+}
+
+.nav__menu-list li:hover > a {
+  color: $white;
+}
+
+.nav__menu-list li ul {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  overflow: hidden;
+  z-index: $front;
+  background: $white;
   color: $blue;
+}
+
+.nav__menu-list li:hover ul {
+  display: block;
+}
+
+.nav__menu-list li:hover ul li {
+  display: block;
 }
 
 .mobile-menu__container {

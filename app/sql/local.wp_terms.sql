@@ -4,4 +4,6 @@
 INSERT INTO `wp_terms` VALUES
 (1,"Uncategorized","uncategorized",0),
 (2,"Main Navigation","main-navigation",0),
-(3,"Footer","footer",0);
+(3,"Footer","footer",0),
+(4,"People","people",0),
+(5,"Faculty","faculty",0);

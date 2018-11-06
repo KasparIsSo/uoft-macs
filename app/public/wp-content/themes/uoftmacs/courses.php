@@ -6,64 +6,69 @@
   if( have_posts() ):
     
     while(have_posts()): the_post();?>
-      <?php if(has_post_thumbnail()): ?>
+      <?php get_template_part( 'partials/image-full-bleed', 'fullBleedImage' ); ?>
 
-        <div class = "feature__image">
-          <?php the_post_thumbnail($size = 'large');?>
-        </div>
-
-      <?php endif ?>
-      
       <div class = "content__wrapper">
         <div class = "content content--courses grid-container">
-          <p class = "quote">
-            <?php echo get_field( "subheading_1" ) ?>
-          </p>
-          <div class = "content__text">
-            <?php echo get_field( "content_1" ) ?>
-          </div>
+          <?php 
+            $quote = get_field( "subheading_1" );
+            include(locate_template('partials/quote.php'));
+          ?>
+          <?php 
+            $content = get_field("content_1");
+            include(locate_template('partials/content.php'));
+          ?>
 
           <hr class = "content__course-break">
 
-          <p class = "quote">
-            <?php echo get_field( "subheading_2" ) ?>
-          </p>
-          <div class = "content__text">
-            <?php echo get_field( "content_2" ) ?>
-          </div>
+          <?php 
+            $quote = get_field( "subheading_2" );
+            include(locate_template('partials/quote.php'));
+          ?>
+          <?php 
+            $content = get_field("content_2");
+            include(locate_template('partials/content.php'));
+          ?>
 
           <hr class = "content__course-break">
 
-          <p class = "quote">
-            <?php echo get_field( "subheading_3" ) ?>
-          </p>
-          <div class = "content__text">
-            <?php echo get_field( "content_3" ) ?>
-          </div>
+          <?php 
+            $quote = get_field( "subheading_3" );
+            include(locate_template('partials/quote.php'));
+          ?>
+          <?php 
+            $content = get_field("content_3");
+            include(locate_template('partials/content.php'));
+          ?>
 
           <hr class = "content__course-break">
 
-          <p class = "quote">
-            <?php echo get_field( "subheading_4" ) ?>
-          </p>
-          <div class = "content__text">
-            <?php echo get_field( "content_4" ) ?>
-          </div>
+          <?php 
+            $quote = get_field( "subheading_4" );
+            include(locate_template('partials/quote.php'));
+          ?>
+          <?php 
+            $content = get_field("content_4");
+            include(locate_template('partials/content.php'));
+          ?>
 
           <hr class = "content__course-break">
 
-          <p class = "quote">
-            <?php echo get_field( "subheading_5" ) ?>
-          </p>
-          <div class = "content__text">
-            <?php echo get_field( "content_5" ) ?>
-          </div>
+          <?php 
+            $quote = get_field( "subheading_5" );
+            include(locate_template('partials/quote.php'));
+          ?>
+          <?php 
+            $content = get_field("content_5");
+            include(locate_template('partials/content.php'));
+          ?>
 
           <hr class = "content__course-break">
 
-          <div class = "content__text">
-            <?php echo get_field( "content_6" ) ?>
-          </div>
+          <?php 
+            $content = get_field("content_6");
+            include(locate_template('partials/content.php'));
+          ?>
         </div>
         
         </div>

@@ -6,48 +6,33 @@
   if( have_posts() ):
     
     while(have_posts()): the_post();?>
-      <?php if(has_post_thumbnail()): ?>
-
-        <div class = "feature__image">
-          <?php the_post_thumbnail($size = 'large');?>
-        </div>
-
-      <?php endif ?>
+      <?php get_template_part( 'partials/image-full-bleed', 'fullBleedImage' ); ?>
       
       <div class = "content__wrapper">
         <div class = "content grid-container">
+          <?php 
+            $quote = get_field( "quote_section_1" );
+            include(locate_template('partials/quote.php'));
+          ?>
 
-          <p class = "quote">
-            <?php echo get_field( "quote_section_1" ) ?>
-          </p>
-          <div class = "content__text">
-            <?php echo get_field( "content_1" ) ?>
-          </div>
-        
+          <?php 
+            $content = get_field("content_1");
+            include(locate_template('partials/content.php'));
+          ?>
         </div>
 
         <div class = "content--image-full grid-container">
           <?php 
-
-          $image = get_field("inline_image");
-
-          if( !empty($image) ): ?>
-            <div class = "image--full">
-              <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-              <p class = "image__caption">
-                <b><?php echo $image['description']; ?></b> - 
-                <?php echo $image['caption']; ?>
-              </p>
-            </div>
-          <?php endif; ?>
+            $image = get_field("inline_image");
+            include(locate_template('partials/image-inline.php'));
+          ?>
         </div>
 
         <div class = "content grid-container">
-
-          <div class = "content__text">
-            <?php echo get_field( "content_2" ) ?>
-          </div>
-
+          <?php 
+            $content = get_field("content_2");
+            include(locate_template('partials/content.php'));
+          ?>
         </div>
       </div>
 
