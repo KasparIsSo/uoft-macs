@@ -88,3 +88,15 @@ Stack trace:
 [14-Oct-2018 07:42:47 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting ':' in /app/public/wp-content/themes/uoftmacs/partials/profile.php on line 8
 [14-Oct-2018 07:50:21 UTC] PHP Parse error:  syntax error, unexpected 'get_field' (T_STRING), expecting ',' or ';' in /app/public/wp-content/themes/uoftmacs/partials/profile.php on line 14
 [14-Oct-2018 07:50:38 UTC] PHP Parse error:  syntax error, unexpected '.', expecting end of file in /app/public/wp-content/themes/uoftmacs/partials/profile.php on line 14
+[06-Nov-2018 08:55:58 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/uoftmacs/people.php on line 15
+[06-Nov-2018 08:56:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/uoftmacs/people.php on line 17
+[06-Nov-2018 08:56:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /app/public/wp-content/themes/uoftmacs/people.php on line 17
+[06-Nov-2018 08:57:38 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/themes/uoftmacs/people.php on line 18
+[06-Nov-2018 09:02:47 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /app/public/wp-content/themes/uoftmacs/people.php on line 24
+[06-Nov-2018 09:03:57 UTC] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting ',' or ';' in /app/public/wp-content/themes/uoftmacs/people.php on line 24
+[08-Nov-2018 07:16:36 UTC] PHP Warning:  Error while sending QUERY packet. PID=403 in /app/public/wp-includes/wp-db.php on line 1924
+[13-Nov-2018 03:38:34 UTC] PHP Parse error:  syntax error, unexpected 'get_field' (T_STRING), expecting '(' in /app/public/wp-content/themes/uoftmacs/partials/profile.php on line 4
+[13-Nov-2018 03:39:23 UTC] PHP Parse error:  syntax error, unexpected 'isset' (T_ISSET), expecting '(' in /app/public/wp-content/themes/uoftmacs/partials/profile.php on line 4
+[13-Nov-2018 03:40:09 UTC] PHP Parse error:  syntax error, unexpected '?>' in /app/public/wp-content/themes/uoftmacs/partials/profile.php on line 4
+[13-Nov-2018 03:40:20 UTC] PHP Parse error:  syntax error, unexpected ':' in /app/public/wp-content/themes/uoftmacs/partials/profile.php on line 4
+[13-Nov-2018 03:40:39 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting ':' in /app/public/wp-content/themes/uoftmacs/partials/profile.php on line 11

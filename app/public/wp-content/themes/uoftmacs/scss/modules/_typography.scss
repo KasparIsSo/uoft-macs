@@ -13,6 +13,25 @@ p {
   margin: 0;
 }
 
+@mixin f-size--xl {
+  font-size: rem(36);
+  line-height: rem(48);
+  @media (max-width: $breakpoint--desktop) {
+    font-size: rem(36);
+    line-height: rem(48);
+  }
+
+  @media (max-width: $breakpoint--tablet) {
+    font-size: rem(36);
+    line-height: rem(48);
+  }
+
+  @media (max-width: $breakpoint--tablet) {
+    font-size: rem(36);
+    line-height: rem(48);
+  }
+}
+
 @mixin f-size--l {
   font-size: rem(18);
   line-height: rem(30);

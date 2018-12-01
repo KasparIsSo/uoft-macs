@@ -1,0 +1,36 @@
+@import "variables/breakpoints.scss";
+@import "variables/grid.scss";
+@import "typography.scss";
+
+.error404 {
+  grid-column-start: 1;
+  grid-column-end: $grid-columns + 1;
+  display: block;
+  margin: 20px 0;
+
+  @media (max-width: $breakpoint--tablet) {
+    grid-column-start: 1;
+    grid-column-end: $grid-columns--tablet + 1;
+  }
+
+  @media (max-width: $breakpoint--mobile) {
+    grid-column-start: 1;
+    grid-column-end: $grid-columns--mobile + 1;
+  }
+}
+
+.error404__heading {
+  @include f-size--xl;
+  color: $blue;
+  margin-bottom: 40px;
+}
+
+.error404__subheading {
+  @include f-size--m-body;
+  color:$blue;
+}
+
+.error404__body {
+  @include f-size--m-body;
+  margin-bottom: 20px;
+}

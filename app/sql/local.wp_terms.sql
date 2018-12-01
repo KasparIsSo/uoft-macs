@@ -6,4 +6,6 @@ INSERT INTO `wp_terms` VALUES
 (2,"Main Navigation","main-navigation",0),
 (3,"Footer","footer",0),
 (4,"People","people",0),
-(5,"Faculty","faculty",0);
+(5,"Faculty","faculty",0),
+(6,"Research &amp; Fieldwork","research-fieldwork",0),
+(7,"Main Navigation - Mobile","main-navigation-mobile",0);

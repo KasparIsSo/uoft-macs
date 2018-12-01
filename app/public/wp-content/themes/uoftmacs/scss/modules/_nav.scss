@@ -131,7 +131,16 @@
 .nav__menu-list li {
   position: relative;
   display: inline-block;
-  padding: 10px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-left: -1px;
+  margin-right: -3px;
+  cursor: pointer;
+}
+
+.nav__menu-list li a {
+  position: relative;
+  padding: 11px;
   vertical-align: text-top;
   @include transition($transition-duration);
 }
@@ -144,11 +153,8 @@
   color: $blue;
 }
 
-.nav__menu-list li:hover {
+.nav__menu-list li > a:hover {
   background: $blue;
-}
-
-.nav__menu-list li:hover > a {
   color: $white;
 }
 
@@ -169,10 +175,6 @@
   display: block;
 }
 
-.nav__menu-list li:hover ul li {
-  display: block;
-}
-
 .mobile-menu__container {
   display: none;
   @media (max-width: $breakpoint--tablet) {
@@ -185,13 +187,6 @@
     grid-column-start: $grid-columns--mobile;
     grid-column-end: $grid-columns--mobile + 1;
   }
-}
-
-.mobile-menu {
-  padding-top: 100%;
-  min-height: 62px;
-  position: relative;
-  z-index: $overlay;
 }
 
 .mobile-menu__bar {
@@ -223,6 +218,12 @@
 }
 
 .mobile-menu {
+
+  padding-top: 100%;
+  min-height: 62px;
+  position: relative;
+  z-index: $top;
+  
   &.active {
     .mobile-menu__bar--top {
       top: 50%;
@@ -268,6 +269,7 @@
   top: 0;
   right: -300px;
   padding: 180px 30px;
+  z-index: $overlay;
   @include transition($transition-duration);
   &.active {
     right: 0;

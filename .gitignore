@@ -4,6 +4,6 @@ npm-debug.log
 .env
 .DS_Store
 logs
-**/themes/twentysixteen
-**/themes/uoftmacs/assets
-**/themes/uploads
+app/**/twentysixteen
+app/**/uoftmacs/assets
+app/**/uploads

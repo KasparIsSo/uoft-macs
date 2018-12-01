@@ -11,14 +11,13 @@
       <div class = "content__wrapper">
         <div class = "content grid-container">
         <?php 
-            $quote = get_field( "quote_section_1" );
-            include(locate_template('partials/quote.php'));
-          ?>
+          $quote = get_field( "quote_section_1" );
+          include(locate_template('partials/quote.php'));
+        ?>
         <?php 
           $content = get_field("content_1");
           include(locate_template('partials/content.php'));
         ?>
-
         </div>
       </div>
 

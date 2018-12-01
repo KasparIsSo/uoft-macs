@@ -30,7 +30,7 @@
         </div>
       </div>
       <?php wp_nav_menu(array(
-        'theme_location'=>'primary', 
+        'theme_location'=>'primary-mobile', 
         'container_class'=>'mobile-menu__popout', 
         'menu_class'=>'mobile-menu__list'))
       ?>
